@@ -31,5 +31,5 @@ Route::post('/mahasiswa/store', [MahasiswaController::class, 'store'])->name('mh
 Route::delete('/mahasiswa/{id}', [MahasiswaController::class, 'destroy'])->name('mahasiswa.destroy');
 
 // CATATAN: Jika Anda ingin menambahkan fitur edit/update nanti, rutenya akan seperti ini:
-// Route::get('/mahasiswa/{id}/edit', [MahasiswaController::class, 'edit'])->name('mahasiswa.edit');
-// Route::put('/mahasiswa/{id}', [MahasiswaController::class, 'update'])->name('mahasiswa.update');
+Route::get('/mahasiswa/{id}/edit', [MahasiswaController::class, 'edit'])->name('mhs-edit');
+Route::put('/mahasiswa/{id}', [MahasiswaController::class, 'update'])->name('mahasiswa.update');

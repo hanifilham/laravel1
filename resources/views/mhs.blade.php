@@ -41,6 +41,8 @@
                                 <td>{{ $mhs->nama }}</td>
                                 <td>{{ $mhs->kelas }}</td>
                                 <td>
+                                    {{-- FORM UNTUK FUNGSI EDIT --}}
+                                    <a href="{{ route('mhs-edit', $mhs->id) }}" class="btn btn-warning btn-sm">Edit</a> {{-- Tombol Edit --}}
                                     {{-- FORM UNTUK FUNGSI DELETE (sudah dikoreksi) --}}
                                     <form action="{{ route('mahasiswa.destroy', $mhs->id) }}" method="POST" class="d-inline">
                                         @csrf
