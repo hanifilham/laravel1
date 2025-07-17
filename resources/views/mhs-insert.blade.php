@@ -36,7 +36,7 @@
                 <p class="text-muted mb-4">Silakan masukkan data mahasiswa baru di bawah ini. Pastikan semua field diisi dengan benar.</p>
                 <div class="form-group">
                     <label for="nim">NIM</label>
-                    <input type="text" class="form-control" id="nim" name="nim" required value="{{ old('nim') }}"> {{-- Tambah value="{{ old('nim') }}" agar input tidak hilang saat validasi gagal --}}
+                    <input type="number" class="form-control" id="nim" name="nim" required value="{{ old('nim') }}"> {{-- Tambah value="{{ old('nim') }}" agar input tidak hilang saat validasi gagal --}}
                 </div>
                 <div class="form-group">
                     <label for="nama">Nama</label>

@@ -31,8 +31,8 @@ class MahasiswaController extends Controller
     {
         // Validasi data yang masuk dari form
         $validatedData = $request->validate([
-            'nim' => 'required|string|unique:mahasiswa,nim|max:20',
-            'nama' => 'required|string|max:255',
+            'nim' => 'required|string|unique:mahasiswa,nim|max:8',
+            'nama' => 'required|string|max:35',
             'kelas' => 'required|string|max:50',
         ]);
 
